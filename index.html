@@ -209,7 +209,7 @@
     <!-- contact section design -->
     <section class="contact" id="contact">
         <h2 class="heading">contact <span>Me!</span></h2>
-        <form action="#" onsubimit="senEmail(); reset(); return false;">
+        <form onsubimit="senEmail(); reset(); return false;">
             <div class="input-box">
                 <div class="input-field">
                     <input type="text" id="name" placeholder="Full Name" required>
@@ -266,10 +266,10 @@
             To : 'as3914583@gmail.com',
             From : document.getElementById("email").value,
             Subject : "New Contact Form Enquiry",
-            Body : "Full Name: " + document.getElementById("name").value
-                + "<br> Email Address: " + document.getElementById("email").value
-                + "<br> Mobile Number: " + document.getElementById("phone").value
-                + "<br> Your Message: " + document.getElementById("message").value
+            Body : "Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone: " + document.getElementById("phone").value
+                + "<br> Message: " + document.getElementById("message").value
         }).then(
           message => alert(Message Sent Succesfully)
         );
